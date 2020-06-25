@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>John JS Example 5</title>
+    </head>
+    <body>
+        <div id="app">
+            <div v-for="contact in contacts" :key="contact.id" style="background-color: #ff0a0a; width: 200px; height: 100px;">{{names}}</li>
+                <p>{{contact.id}}</p>
+                <p>{{contact.name}}</p>
+                <p>{{contact.email}}</p>
+                <p>{{contact.password}}</p>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>John JS</title>
+    </head>
+    <body>
+        <div id="app">
+
+            <h1>Aluno: {{name}}</h1>
+            <h2 v-show="status">Status do aluno: ativo</h2>
+            <h2 v-show="!status">Status do aluno: inativo</h2>
+
+            <p>Nota 1: {{grade1}}
+            <br>Nota 2: {{grade2}}
+            <br>Média: {{average}}
+            </p>
+
+            <h3>Conceito:</h3>
+            <p v-if="average >=9">A</p>
+            <p v-else-if="average >=8">B</p>
+            <p v-else-if="average >=6">C</p>
+            <p v-else="average >0">D</p>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
